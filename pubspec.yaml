@@ -1,0 +1,44 @@
+name: reddit_video_maker
+description: "A Flutter application to download and stitch together videos from Reddit."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  window_manager: ^0.3.7
+  gap: ^3.0.1
+  http: ^1.1.2
+  audioplayers: ^5.2.1
+  file_picker: ^6.1.1
+  url_launcher: ^6.2.2
+  path_provider: ^2.1.1
+  # web_socket_channel: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  msix: ^3.16.7
+
+flutter:
+  uses-material-design: true
+
+msix_config:
+  display_name: Reddit Video Maker
+  publisher_display_name: evilDAVE
+  identity_name: com.evildave.redditvideomaker
+  msix_version: 1.0.0.0
+  # logo_path: C:\path\to\logo.png
+  # capabilities: internetClient, location, microphone, webcam
+  output_path: dist
+  output_name: RedditVideoMaker
+  debug: false
